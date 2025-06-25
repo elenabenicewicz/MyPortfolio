@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Benitsevich | Sales Team Lead | Transportation & Logistics Expert | 600% Growth Specialist</title>
+    <meta name="description" content="Elena Benitsevich - Dynamic Sales Team Lead at Truck1.eu. Achieved 600% sales growth, led China market entry at Kronospan, and built high-performing international teams across European transportation markets.">
+    <meta name="keywords" content="Business Development Manager, B2B Sales, Transportation, Logistics, Team Leadership, European Markets, Strategic Partnerships">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💼%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #1e293b;
+            --accent-color: #3b82f6;
+            --gold-color: #f59e0b;
+            --success-color: #10b981;
+            --text-dark: #0f172a;
+            --text-light: #475569;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --bg-dark: #0f172a;
+            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.1);
+            --shadow-md: 0 4px 6px rgba(15, 23, 42, 0.1);
+            --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.15);
+            --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
+            --gradient-primary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            overflow-x: hidden;
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .container-sm {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader-content {
+            text-align: center;
+            color: white;
+        }
+
+        .loader-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .loader-text {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-lg);
+            padding: 0.75rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            color: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 8rem 0 4rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(200, 168, 130, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+            clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.75rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            color: var(--accent-color);
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            opacity: 0.85;
+            max-width: 500px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: var(--primary-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: var(--shadow-xl);
+            border: 4px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+            color: var(--text-dark);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-card-1 {
+            top: -20px;
+            left: -40px;
+            width: 200px;
+        }
+
+        .hero-card-2 {
+            bottom: -20px;
+            right: -40px;
+            width: 180px;
+        }
+
+        .hero-card-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-card-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero-card-text {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Calendly Button Enhancements */
+        .calendly-btn {
+            position: relative;
+            overflow: hidden;
+            transform: translateY(0);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .calendly-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
+        }
+
+        .calendly-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .calendly-btn:hover::before {
+            left: 100%;
+        }
+
+        /* Pulse Animation for CTA */
+        .calendly-btn {
+            animation: pulse-glow 3s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+            }
+        }
+
+        /* Hover Effects */
+        .hero-floating-card {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-card-1 {
+            animation-delay: -2s;
+        }
+
+        .hero-card-2 {
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Form Styles */
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .hero-container {
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .hero-image-container {
+                width: 300px;
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+
+            /* About Section Mobile */
+            div[style*="grid-template-columns: 1fr 2fr"] {
+                display: block !important;
+            }
+
+            /* Experience Timeline Mobile */
+            div[style*="grid-template-columns: 1fr 1fr"][data-aos="fade-up"] {
+                display: block !important;
+                text-align: center;
+            }
+
+            /* Contact Section Mobile */
+            div[style*="grid-template-columns: 1fr 1fr"]:has(form) {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">EB</div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">Elena Benitsevich</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="https://calendly.com/elena-benitsevich/30min" target="_blank" class="nav-cta calendly-btn">Book Call</a></li>
+                </ul>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <i class="fas fa-award"></i>
+                        Sales Team Lead • 600% Growth Specialist
+                    </div>
+                    <h1 class="hero-title">Elena Benitsevich</h1>
+                    <p class="hero-subtitle">Driving Strategic Growth in Transportation & Logistics</p>
+                    <p class="hero-description">
+                        "Push forward with purpose. Your experience is your power." Elena combines deep operational knowledge 
+                        with an innovative, results-driven mindset—helping companies grow sustainably through strategy, 
+                        technology, and strong customer relationships across European markets.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">600%</span>
+                            <span class="hero-stat-label">Sales Growth</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">15+</span>
+                            <span class="hero-stat-label">Team Members</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">10+</span>
+                            <span class="hero-stat-label">Years Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="https://calendly.com/elena-benitsevich/30min" target="_blank" class="btn btn-primary calendly-btn">
+                            <i class="fas fa-calendar-alt"></i>
+                            Book Free Consultation
+                        </a>
+                        <a href="#expertise" class="btn btn-secondary">
+                            <i class="fas fa-chart-line"></i>
+                            View Expertise
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-image-container">
+                        <img src="elena_profile.png" alt="Elena Benitsevich - Senior Business Development Manager" class="hero-image">
+                        
+                        <div class="hero-floating-card hero-card-1" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="hero-card-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="hero-card-title">600% Growth</div>
+                            <div class="hero-card-text">Regional sales transformation</div>
+                        </div>
+
+                        <div class="hero-floating-card hero-card-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                            <div class="hero-card-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <div class="hero-card-title">China Entry</div>
+                            <div class="hero-card-text">Historic market expansion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">About Elena</div>
+                <h2 class="section-title">Strategic Business Development Leader</h2>
+                <p class="section-subtitle">
+                    Driving exponential growth through innovative B2B strategies and exceptional team leadership 
+                    across the European transportation and logistics landscape.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: center; margin-top: 4rem;">
+                <div data-aos="fade-right">
+                    <div style="position: relative; width: 350px; height: 450px; margin: 0 auto;">
+                        <img src="elena_profile.png" 
+                             alt="Elena Benitsevich Professional Photo" 
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; box-shadow: var(--shadow-xl);">
+                        
+                        <!-- Floating Achievement Cards -->
+                        <div style="position: absolute; top: -20px; right: -30px; background: white; padding: 1rem; border-radius: 15px; box-shadow: var(--shadow-lg); width: 120px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">200%+</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light);">Target Achievement</div>
+                        </div>
+                        
+                        <div style="position: absolute; bottom: -20px; left: -30px; background: white; padding: 1rem; border-radius: 15px; box-shadow: var(--shadow-lg); width: 120px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">€50M+</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light);">Revenue Generated</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-dark);">
+                        Transforming Business Relationships into Revenue Success
+                    </h3>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-light);">
+                        Elena Benitsevich is a dynamic sales and business development leader with a strong foundation in finance. 
+                        She began her career as a financial specialist, gradually transitioning into sales—where her analytical mindset, 
+                        process-oriented approach, and deep understanding of business operations quickly set her apart. Rising from a sales 
+                        controller to sales team leader, Elena mastered every stage of the commercial process, gaining hands-on experience 
+                        across finance, logistics, sales, and product quality.
+                    </p>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-light);">
+                        Her ability to connect strategy with execution allowed her to build high-performing international sales teams and 
+                        lead cross-functional initiatives that deliver measurable results. Elena combines deep operational knowledge with 
+                        an innovative, results-driven mindset—helping companies grow sustainably through strategy, technology, and strong 
+                        customer relationships.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--primary-color);">Core Expertise</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Strategic B2B Sales</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Team Leadership</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Market Expansion</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Partnership Development</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--primary-color);">Industries</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-truck" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Transportation</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-industry" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Industrial Equipment</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-cogs" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Commercial Vehicles</li>
+                                <li style="padding: 0.25rem 0; color: var(--text-light);"><i class="fas fa-globe-europe" style="color: var(--accent-color); margin-right: 0.5rem;"></i>European Markets</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://calendly.com/elena-benitsevich/30min" target="_blank" class="btn calendly-btn" style="background: var(--gradient-accent); color: white;">
+                            <i class="fas fa-video"></i>
+                            Book Strategy Call
+                        </a>
+                        <a href="#experience" class="btn btn-outline" style="background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color);">
+                            <i class="fas fa-briefcase"></i>
+                            View Experience
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Professional Journey</div>
+                <h2 class="section-title">Career Excellence</h2>
+                <p class="section-subtitle">
+                    A proven track record of driving business growth and leading high-performance teams 
+                    across diverse industries and markets.
+                </p>
+            </div>
+
+            <div style="position: relative; margin-top: 4rem;">
+                <!-- Timeline Line -->
+                <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--gradient-primary); transform: translateX(-50%);"></div>
+
+                <!-- Experience Items -->
+                <div style="display: flex; flex-direction: column; gap: 4rem;">
+                    <!-- Truck1.eu -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up">
+                        <div style="text-align: right;">
+                            <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); border-left: 5px solid var(--accent-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">Truck1.eu</h3>
+                                    <span style="background: var(--gradient-accent); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2020–Present</span>
+                                </div>
+                                <h4 style="font-size: 1.1rem; color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Sales Team Lead</h4>
+                                <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 1.5rem;">
+                                    Scaled sales by <strong>600%</strong> in the assigned region over 4 years while building and leading 
+                                    a high-performing sales team of 5 people. Operating in the Polish market and other English-speaking 
+                                    regions, managing full-cycle sales processes including acquisition, onboarding, and retention using 
+                                    CRM systems, AI-based lead qualification, and analytics platforms.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Team Leadership</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">B2B Sales</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Digital Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                                <i class="fas fa-truck" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SmartMarketing AI -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                                <i class="fas fa-brain" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); border-left: 5px solid var(--primary-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">SmartMarketing AI</h3>
+                                    <span style="background: var(--gradient-primary); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2024–2025</span>
+                                </div>
+                                <h4 style="font-size: 1.1rem; color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Founder & CEO</h4>
+                                <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 1.5rem;">
+                                    Founded and led a cutting-edge digital marketing consultancy focused on AI-driven strategies for B2B companies. 
+                                    Specialized in marketing automation, lead generation, and data-driven outreach campaigns for transportation 
+                                    and industrial sectors, achieving rapid client acquisition and retention.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">AI Strategy</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Entrepreneurship</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kronospan -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up">
+                        <div style="text-align: right;">
+                            <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); border-left: 5px solid var(--accent-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">Kronospan</h3>
+                                    <span style="background: var(--gradient-accent); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2013–2020</span>
+                                </div>
+                                <h4 style="font-size: 1.1rem; color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Head of Sales</h4>
+                                <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 1.5rem;">
+                                    Managed a team of over <strong>10 people</strong> across sales, logistics, and service operations. 
+                                    Coordinated international projects and export operations, achieving a historic milestone by 
+                                    <strong>successfully entering the Chinese market</strong> with the company's first shipments there. 
+                                    Utilized SAP, advanced forecasting, and logistics platforms to drive operational excellence.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Sales Management</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Market Expansion</span>
+                                    <span style="background: var(--bg-light); color: var(--text-dark); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Industrial</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                                <i class="fas fa-industry" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Key Achievements</div>
+                <h2 class="section-title">Proven Results & Impact</h2>
+                <p class="section-subtitle">
+                    Quantifiable achievements that demonstrate exceptional performance and strategic impact 
+                    across European transportation and logistics markets.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <!-- Revenue Growth -->
+                <div data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--accent-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">600%</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Sales Growth</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Achieved extraordinary 600% sales growth in assigned region over 4 years at Truck1.eu, 
+                        demonstrating exceptional strategic execution and market penetration capabilities.
+                    </p>
+                </div>
+
+                <!-- Target Achievement -->
+                <div data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--primary-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-globe-asia" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">China</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Market Entry</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Successfully spearheaded Kronospan's historic first market entry into China, 
+                        establishing new trade relationships and opening strategic opportunities in Asia-Pacific region.
+                    </p>
+                </div>
+
+                <!-- Market Coverage -->
+                <div data-aos="fade-up" data-aos-delay="300" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--accent-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-globe-europe" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">15+</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Countries Served</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Expanded business operations across 15+ European countries, establishing strong market 
+                        presence and sustainable partnerships in diverse cultural and business environments.
+                    </p>
+                </div>
+
+                <!-- Team Leadership -->
+                <div data-aos="fade-up" data-aos-delay="400" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--primary-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-users" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">15+</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Team Members Led</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Built and led high-performing international teams across sales, logistics, and service functions, 
+                        implementing training programs and driving exceptional performance results.
+                    </p>
+                </div>
+
+                <!-- Product Lines -->
+                <div data-aos="fade-up" data-aos-delay="500" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--accent-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-truck" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">380+</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Product Lines Managed</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Managed over 380 product lines in commercial vehicles and industrial equipment, 
+                        optimizing portfolio performance and market positioning.
+                    </p>
+                </div>
+
+                <!-- Client Acquisition -->
+                <div data-aos="fade-up" data-aos-delay="600" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); text-align: center; border-top: 5px solid var(--primary-color);">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-handshake" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">20K+</h3>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">Machines Sold</h4>
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Facilitated the sale of over 20,000 commercial vehicles and industrial machines, 
+                        building lasting relationships with key industry players.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Professional Services</div>
+                <h2 class="section-title">Strategic Business Solutions</h2>
+                <p class="section-subtitle">
+                    Comprehensive business development services designed to accelerate growth, 
+                    optimize performance, and drive sustainable success in competitive markets.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 4rem;">
+                <!-- Business Development Consulting -->
+                <div data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 3rem; border-radius: 20px; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: var(--gradient-accent); opacity: 0.1; border-radius: 50%; transform: translate(30px, -30px);"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-line" style="font-size: 1.5rem; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">Business Development Consulting</h3>
+                            <p style="color: var(--accent-color); font-weight: 600;">Strategic Growth Solutions</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 2rem;">
+                        Comprehensive business development strategies tailored to your industry and market. From market analysis 
+                        to implementation, I provide end-to-end solutions that drive measurable growth and competitive advantage.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Market Analysis & Strategy Development
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Revenue Optimization & Growth Planning
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Partnership & Alliance Development
+                        </li>
+                    </ul>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-size: 0.9rem; color: var(--text-light);">Starting from</span>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">€150/hour</div>
+                        </div>
+                        <a href="#contact" class="btn" style="background: var(--gradient-primary); color: white; padding: 0.75rem 1.5rem;">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Leadership Training -->
+                <div data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 3rem; border-radius: 20px; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: var(--gradient-primary); opacity: 0.1; border-radius: 50%; transform: translate(30px, -30px);"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-users" style="font-size: 1.5rem; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">Team Leadership Training</h3>
+                            <p style="color: var(--accent-color); font-weight: 600;">Performance Excellence</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 2rem;">
+                        Transform your sales teams into high-performance units with proven leadership methodologies. 
+                        Specialized training programs designed for multinational teams and complex B2B environments.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Multinational Team Management
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Performance Optimization Systems
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--text-light); display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.75rem;"></i>
+                            Cultural Integration Strategies
+                        </li>
+                    </ul>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-size: 0.9rem; color: var(--text-light);">Workshop Package</span>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">€2,500</div>
+                        </div>
+                        <a href="#contact" class="btn" style="background: var(--gradient-accent); color: white; padding: 0.75rem 1.5rem;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Calendly CTA Section -->
+    <section class="section" id="calendly" style="background: var(--gradient-accent); color: white; padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge" style="background: rgba(255, 255, 255, 0.2);">Book Your Strategy Session</div>
+                <h2 class="section-title" style="color: white;">Ready to Scale Your Business?</h2>
+                <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9); max-width: 700px;">
+                    Get personalized insights on how to achieve 600%+ growth in your market. 
+                    Book a free 30-minute strategy session with Elena and discover proven methods 
+                    that have generated millions in revenue across European markets.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://calendly.com/elena-benitsevich/30min" target="_blank" 
+                   class="btn calendly-btn" 
+                   style="background: white; color: var(--accent-color); font-size: 1.2rem; padding: 1.2rem 3rem; margin: 0 1rem;">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Free Strategy Session
+                </a>
+                <a href="https://calendly.com/elena-benitsevich/discovery" target="_blank" 
+                   class="btn" 
+                   style="background: rgba(255, 255, 255, 0.1); color: white; font-size: 1.1rem; padding: 1.2rem 2.5rem; margin: 0 1rem; border: 2px solid rgba(255, 255, 255, 0.3);">
+                    <i class="fas fa-video"></i>
+                    Discovery Call
+                </a>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div style="text-align: center; background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(20px);" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-rocket" style="font-size: 2.5rem; margin-bottom: 1rem; color: white;"></i>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Strategy Session</h4>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">30-minute focused session on your growth challenges</p>
+                </div>
+                <div style="text-align: center; background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(20px);" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-chart-line" style="font-size: 2.5rem; margin-bottom: 1rem; color: white;"></i>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Growth Analysis</h4>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">Detailed analysis of your market opportunities</p>
+                </div>
+                <div style="text-align: center; background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; backdrop-filter: blur(20px);" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-handshake" style="font-size: 2.5rem; margin-bottom: 1rem; color: white;"></i>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Partnership Opportunities</h4>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">Explore potential collaboration and partnership models</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" style="background: var(--gradient-primary); color: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge" style="background: rgba(255, 255, 255, 0.1); color: white;">Get In Touch</div>
+                <h2 class="section-title" style="color: white;">Let's Drive Your Business Forward</h2>
+                <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">
+                    Ready to accelerate your business development? Let's discuss how we can achieve 
+                    exceptional results together.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 4rem;">
+                <div data-aos="fade-right">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-color);">Contact Information</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">Location</div>
+                                <div style="opacity: 0.8;">Warsaw, Poland</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-envelope" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">Email</div>
+                                <div style="opacity: 0.8;">elena.benitsevich@truck1.eu</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fab fa-linkedin" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">LinkedIn</div>
+                                <div style="opacity: 0.8;">
+                                    <a href="https://www.linkedin.com/in/elena-benitsevich-45a825205/" target="_blank" style="color: var(--accent-color); text-decoration: none;">
+                                        linkedin.com/in/elena-benitsevich-45a825205
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fab fa-whatsapp" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">WhatsApp</div>
+                                <div style="opacity: 0.8;">+48 794 366 048</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-phone" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">Mobile</div>
+                                <div style="opacity: 0.8;">+48 794 366 048</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-building" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">Company</div>
+                                <div style="opacity: 0.8;">Sales Team Lead at Truck1.eu</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Professional Services</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; opacity: 0.8;"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Business Development Consulting</li>
+                            <li style="padding: 0.5rem 0; opacity: 0.8;"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Sales Team Leadership</li>
+                            <li style="padding: 0.5rem 0; opacity: 0.8;"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Market Expansion Strategy</li>
+                            <li style="padding: 0.5rem 0; opacity: 0.8;"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Partnership Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <form style="background: rgba(255, 255, 255, 0.1); padding: 2.5rem; border-radius: 20px; backdrop-filter: blur(20px);">
+                        <h3 style="margin-bottom: 2rem; color: var(--accent-color);">Send a Message</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                            <input type="text" placeholder="First Name" required style="padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: white; backdrop-filter: blur(10px);">
+                            <input type="text" placeholder="Last Name" required style="padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: white; backdrop-filter: blur(10px);">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <input type="email" placeholder="Email Address" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: white; backdrop-filter: blur(10px);">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <input type="text" placeholder="Company" style="width: 100%; padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: white; backdrop-filter: blur(10px);">
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <textarea rows="5" placeholder="Your Message" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: white; backdrop-filter: blur(10px); resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-dark); color: white; padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <div style="margin-bottom: 2rem;">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">Elena Benitsevich</h3>
+                <p style="opacity: 0.8;">Sales Team Lead at Truck1.eu | Transportation & Logistics Expert</p>
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+                <a href="https://www.linkedin.com/in/elena-benitsevich-45a825205/" target="_blank" style="color: var(--accent-color); font-size: 1.5rem; transition: transform 0.3s ease;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:elena.benitsevich@truck1.eu" style="color: var(--accent-color); font-size: 1.5rem; transition: transform 0.3s ease;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/48794366048" target="_blank" style="color: var(--accent-color); font-size: 1.5rem; transition: transform 0.3s ease;">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:+48794366048" style="color: var(--accent-color); font-size: 1.5rem; transition: transform 0.3s ease;">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; opacity: 0.6;">
+                <p>&copy; 2024 Elena Benitsevich. All rights reserved. | Designed for professional excellence in business development.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

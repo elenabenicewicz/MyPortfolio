@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d5a87;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a365d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8a882;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Professional overlay -->
+  <rect width="400" height="500" fill="rgba(200, 168, 130, 0.05)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="350" cy="50" r="30" fill="rgba(255, 255, 255, 0.05)"/>
+  <circle cx="50" cy="450" r="25" fill="rgba(200, 168, 130, 0.1)"/>
+  
+  <!-- Main circle background -->
+  <circle cx="200" cy="200" r="120" fill="rgba(255, 255, 255, 0.1)" filter="url(#shadow)"/>
+  
+  <!-- Inner circle -->
+  <circle cx="200" cy="200" r="90" fill="rgba(200, 168, 130, 0.2)"/>
+  
+  <!-- Professional initials -->
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="80" font-weight="bold" 
+        fill="white" text-anchor="middle" dominant-baseline="middle">EB</text>
+  
+  <!-- Name -->
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        fill="white" text-anchor="middle">Elena Benitsevich</text>
+  
+  <!-- Title -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="16" 
+        fill="#c8a882" text-anchor="middle">Senior Business Development Manager</text>
+  
+  <!-- Company -->
+  <text x="200" y="395" font-family="Arial, sans-serif" font-size="14" 
+        fill="rgba(255, 255, 255, 0.8)" text-anchor="middle">Truck1.eu | Warsaw, Poland</text>
+  
+  <!-- Achievement badges -->
+  <!-- Revenue Badge -->
+  <g transform="translate(80, 420)">
+    <rect x="-35" y="-15" width="70" height="30" fill="rgba(255, 255, 255, 0.1)" 
+          stroke="#c8a882" stroke-width="1" rx="5"/>
+    <text x="0" y="-2" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+          fill="#c8a882" text-anchor="middle">€50M+</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="10" 
+          fill="rgba(255, 255, 255, 0.8)" text-anchor="middle">Revenue</text>
+  </g>
+  
+  <!-- Target Badge -->
+  <g transform="translate(200, 420)">
+    <rect x="-35" y="-15" width="70" height="30" fill="rgba(255, 255, 255, 0.1)" 
+          stroke="#c8a882" stroke-width="1" rx="5"/>
+    <text x="0" y="-2" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+          fill="#c8a882" text-anchor="middle">200%+</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="10" 
+          fill="rgba(255, 255, 255, 0.8)" text-anchor="middle">Target</text>
+  </g>
+  
+  <!-- Countries Badge -->
+  <g transform="translate(320, 420)">
+    <rect x="-35" y="-15" width="70" height="30" fill="rgba(255, 255, 255, 0.1)" 
+          stroke="#c8a882" stroke-width="1" rx="5"/>
+    <text x="0" y="-2" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+          fill="#c8a882" text-anchor="middle">15+</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="10" 
+          fill="rgba(255, 255, 255, 0.8)" text-anchor="middle">Countries</text>
+  </g>
+  
+  <!-- Professional border -->
+  <rect x="10" y="10" width="380" height="480" fill="none" 
+        stroke="url(#accentGradient)" stroke-width="3" rx="15"/>
+  
+  <!-- Corner decorations -->
+  <circle cx="30" cy="30" r="3" fill="#c8a882"/>
+  <circle cx="370" cy="30" r="3" fill="#c8a882"/>
+  <circle cx="30" cy="470" r="3" fill="#c8a882"/>
+  <circle cx="370" cy="470" r="3" fill="#c8a882"/>
+</svg> 

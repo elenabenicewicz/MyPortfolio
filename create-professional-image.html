@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Benitsevich - Professional Image Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        canvas {
+            border: 3px solid #1a365d;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        button {
+            background: linear-gradient(135deg, #c8a882 0%, #d4af37 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        h1 {
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elena Benitsevich - Professional Image</h1>
+        <canvas id="profileCanvas" width="400" height="500"></canvas>
+        <br>
+        <button onclick="generateImage()">Generate Professional Image</button>
+        <button onclick="downloadImage()">Download Image</button>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('profileCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function generateImage() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, '#1a365d');
+            gradient.addColorStop(0.5, '#2d5a87');
+            gradient.addColorStop(1, '#1a365d');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Professional overlay
+            ctx.fillStyle = 'rgba(200, 168, 130, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Professional circle background
+            ctx.beginPath();
+            ctx.arc(200, 200, 120, 0, 2 * Math.PI);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fill();
+            
+            // Inner circle
+            ctx.beginPath();
+            ctx.arc(200, 200, 90, 0, 2 * Math.PI);
+            ctx.fillStyle = 'rgba(200, 168, 130, 0.3)';
+            ctx.fill();
+            
+            // Professional initials
+            ctx.font = 'bold 80px Arial';
+            ctx.fillStyle = 'white';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('EB', 200, 200);
+            
+            // Name
+            ctx.font = 'bold 28px Arial';
+            ctx.fillStyle = 'white';
+            ctx.fillText('Elena Benitsevich', 200, 340);
+            
+            // Title
+            ctx.font = '18px Arial';
+            ctx.fillStyle = '#c8a882';
+            ctx.fillText('Senior Business Development Manager', 200, 370);
+            
+            // Company
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fillText('Truck1.eu | Warsaw, Poland', 200, 395);
+            
+            // Achievement badges
+            drawBadge(80, 420, '€50M+', 'Revenue');
+            drawBadge(200, 420, '200%+', 'Target');
+            drawBadge(320, 420, '15+', 'Countries');
+            
+            // Professional border
+            ctx.strokeStyle = '#c8a882';
+            ctx.lineWidth = 4;
+            ctx.strokeRect(10, 10, canvas.width - 20, canvas.height - 20);
+        }
+        
+        function drawBadge(x, y, number, label) {
+            // Badge background
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fillRect(x - 35, y - 15, 70, 30);
+            
+            // Badge border
+            ctx.strokeStyle = '#c8a882';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(x - 35, y - 15, 70, 30);
+            
+            // Number
+            ctx.font = 'bold 12px Arial';
+            ctx.fillStyle = '#c8a882';
+            ctx.textAlign = 'center';
+            ctx.fillText(number, x, y - 2);
+            
+            // Label
+            ctx.font = '10px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fillText(label, x, y + 10);
+        }
+        
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.download = 'elena-benitsevich-professional.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Generate image on load
+        window.onload = function() {
+            generateImage();
+        };
+    </script>
+</body>
+</html> 
