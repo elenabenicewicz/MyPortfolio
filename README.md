@@ -4,7 +4,7 @@ A modern, elegant portfolio website showcasing Elena Benitsevich's expertise as 
 
 ## 🌟 Live Demo
 
-Visit the live website: [Elena Benitsevich Portfolio](https://yourusername.github.io/elena-portfolio)
+Visit the live website: [Elena Benitsevich Portfolio](https://elenabenicewicz.github.io/MyPortfolio/)
 
 ## 👩‍💼 About Elena
 
@@ -81,8 +81,8 @@ Elena Benitsevich is a dynamic sales and business development leader with a stro
 ## 📞 Contact Information
 
 **Elena Benitsevich**
-- **Email**: elena.benitsevich@truck1.eu
-- **LinkedIn**: [linkedin.com/in/elena-benitsevich-45a825205](https://www.linkedin.com/in/elena-benitsevich-45a825205/)
+- **Email**: elenabenicewicz@gmail.com
+- **LinkedIn**: [linkedin.com/in/elena-benitsevich-45a825205](Click Here)
 - **Location**: Warsaw, Poland
 - **Company**: Sales Team Lead at Truck1.eu
 
